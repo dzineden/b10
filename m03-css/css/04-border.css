@@ -1,0 +1,77 @@
+/* 
+things to rememebr about every property
+----------------------------------------
+		1.	What is the default value of this property
+		2.	Does this property get inherited
+		3.	On which elements can you apply this property
+
+Links to refer
+----------------------------------------
+Complete list - https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+
+text transform - https://css-tricks.com/almanac/properties/t/text-transform/
+
+							 - https://developer.mozilla.org/en/docs/Web/CSS/text-transform
+							 
+Color names		 - http://html-color-codes.info/color-names/
+
+
+*/
+/* 
+List related style properties
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+border-style: none solid dotted dashed double ridge groove inset outset
+border-width: pixels
+border-color: 
+	border: [border-style] [border-width] [border-color]
+
+border-collapse
+border-spacing
+empty-cells – show | hide
+
+border-radius:
+border-image:
+
+
+*/
+
+/* 
+border-top-style:
+border-right-style:
+border-bottom-style:
+border-left-style:
+
+border-top-width:
+border-right-width:
+border-bottom-width:
+border-left-width:
+
+border-top-color:
+border-right-color:
+border-bottom-color:
+border-left-color:
+
+*/
+
+.container{
+	color:green;
+}
+
+.bdr-demo1{
+	border-style: double;
+	color:blue;
+	border-color: red;
+	border-width: 30px;
+	border-radius: 40px
+}
+
+.shapes{
+	width:0;
+	height: 0;
+	border-width: 30px;
+	border-color: indigo transparent indigo transparent;
+	border-style: ridge;
+	border-radius: 50%
+}
+
