@@ -1,0 +1,77 @@
+/* 
+		default values 
+		Override
+		Inheritence
+		what are the different values
+		Shorthand properties
+*/
+
+html{
+	font-family: 'Catamaran', sans-serif;
+	font-size: 14px; /*  em, %, vw, vh, rem */
+	color: #444;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	font-family: 'Sevillana', cursive;
+	font-weight: 400;
+}
+
+.site-header h1{
+	font-size: 40px;
+	color:#66368a;
+	text-align: center;
+}
+.site-header h1 small{
+	color:#999;
+	display: block;
+/* 
+	font-size: 16px;
+	font-family: 'Catamaran', sans-serif;
+	font-weight: 300;
+*/
+	font: 300 16px 'Catamaran', sans-serif;
+}
+
+.site-nav ul{
+	text-align: center;
+	
+}
+.site-nav ul li{
+	display:inline;
+}
+.site-nav ul li a{
+	text-transform: uppercase;
+	font-size: 15px;
+	color: #bbb;
+	text-decoration: none;
+}
+.site-nav ul li a:hover,
+.site-nav ul li.active a{
+	color: #000;
+}
+
+
+
+.box{
+	border:solid 1px red;
+	display: inline-block;
+}
+
+.page-title{
+	text-align: center;
+}
+.page-title:before{
+	content: " -·-° ";
+}
+.page-title:after{
+	content: " °-·- ";
+}
+
+
+

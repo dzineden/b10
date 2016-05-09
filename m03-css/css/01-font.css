@@ -1,0 +1,100 @@
+/* 
+things to rememebr about every property
+----------------------------------------
+		1.	What is the default value of this property
+		2.	Does this property get inherited
+		3.	On which elements can you apply this property
+
+Links to refer
+----------------------------------------
+Complete list - https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+
+text transform - https://css-tricks.com/almanac/properties/t/text-transform/
+
+							 - https://developer.mozilla.org/en/docs/Web/CSS/text-transform
+							 
+Color names		 - http://html-color-codes.info/color-names/
+
+
+*/
+/* 
+Font related style properties
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+	font-style: normal | italic | oblique
+	font-weight: normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900
+	font-size: px | % | em  | rem  | vw  | vh
+	line-height:
+	font-family:
+		font:  [font-style font-weight font-size/line-height font-family]
+	text-transform: none | capitalize | uppercase | lowercase | full-width
+	color: 
+				color names yellow
+				hex decimal code (#RRGGBB) #FFFF00 for yellow
+				rgb(); rgb(255,255,0) for yellow
+				rgba() rgba(255,255,0,.5)
+	text-decoration: none | underline | overline | line-through
+
+*/
+
+
+address{
+	font-style: normal;
+}
+
+.fst-demo{
+	font-style: italic;
+	font-size: 16px
+}
+
+
+
+
+.fwt-demo1,
+.fwt-demo2,
+.fwt-demo3,
+.fwt-demo4{
+	font-size: 16px;
+}
+
+.fwt-demo1{
+	font-weight: 100;
+}
+.fwt-demo2{
+	font-weight: 300;
+	line-height: 2;
+}
+.fwt-demo3{
+	font-weight: 400;
+}
+.fwt-demo4{
+	font-weight: 700;
+}
+
+.fwt-demo4{
+/* 	
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+	font-family: 'Sevillana', cursive;
+*/
+	font: normal 700 100px/35px 'Sevillana', cursive;
+	color:rgba(250,0,0,.3);
+}
+
+
+.widget{
+	width:300px;
+	margin: 30px auto;
+	border: solid 1px #CCC;
+	background-color: honeydew;
+}
+.widget h2{
+	background-color: DodgerBlue;
+	margin-top: 0;
+	line-height: 50px;
+	padding-left: 20px;
+}
+
+
