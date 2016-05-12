@@ -10,6 +10,7 @@ html{
 	font-family: 'Catamaran', sans-serif;
 	font-size: 14px; /*  em, %, vw, vh, rem */
 	color: #444;
+	overflow-y: scroll;
 }
 
 h1,

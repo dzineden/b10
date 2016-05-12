@@ -1,0 +1,87 @@
+/* 
+things to rememebr about every property
+----------------------------------------
+		1.	What is the default value of this property
+		2.	Does this property get inherited
+		3.	On which elements can you apply this property
+
+Links to refer
+----------------------------------------
+Complete list - https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+
+text transform - https://css-tricks.com/almanac/properties/t/text-transform/
+
+							 - https://developer.mozilla.org/en/docs/Web/CSS/text-transform
+							 
+Color names		 - http://html-color-codes.info/color-names/
+
+
+*/
+/* 
+Box related style properties
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+width, min-width, max-width
+height, min-height, max-height 
+padding
+margin
+overflow: visible | hidden | scroll | auto
+float : left | right | none
+clear: none | left | right | both
+
+
+box-sizing – content-box | padding-box | border-box
+Flexbox
+resize - none | both | horizontal | vertical 
+opacity 
+column-count
+column-gap
+column-fill – auto | balance
+column-rule - <'column-rule-width'> || <'column-rule-style'> || <'column-rule-color'>
+
+
+*/
+
+.wi-demo{
+	background-color: black;
+	border:solid 20px rgba(255,0,0,.5);
+	margin:30px;
+	padding: 30px;
+	max-width:300px;
+}
+
+.d-ib{
+	display: inline-block;
+}
+
+.dabba{
+	width:300px;
+	background-color: lightblue;
+	border:solid 10px lightgreen;
+	padding:25px;
+	min-height: 100px;
+	max-height: 300px;
+	overflow-y:scroll;
+}
+
+.box{
+	width:49%;
+	display: inline-block;
+}
+.box .content{
+	background-color: lightgreen;
+	padding:10px;
+	margin:10px;
+	border:solid 1px green;
+}
+
+
+
+
+
+
+
+
+
+
+

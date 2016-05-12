@@ -28,6 +28,7 @@ background-repeat: repeat | no-repeat | repeat-x | repeat-y
 background-attachment- fixed | scroll
 background-position
 background [color image repeat attachment position]
+
 background-size – contain, cover
 background-origin – border-box, padding-box, content-box
 background-clip – 
@@ -48,9 +49,10 @@ Gradient Backgrounds – CSS3
 	background-color: lightblue;
 	background-image: url(../img/bg-flora.png);
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 	background-position: 100% 0;
 
-	background: lightblue url('../img/bg-flora.png') no-repeat fixed left center;
+	background: lightblue url('../img/bg-flora.png') no-repeat fixed 100% 0;
 	
 }
 
