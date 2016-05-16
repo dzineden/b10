@@ -1,0 +1,131 @@
+html{
+	font-family: 'Catamaran', sans-serif;
+	font-size: 14px; /*  em, %, vw, vh, rem */
+	color: #444;
+	overflow-y: scroll;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	font-family: 'Sevillana', cursive;
+	font-weight: 400;
+}
+
+.site-header{
+	background-color: #03A9F4;
+}
+.site-header h1{
+	font-size: 40px;
+	color:#FFF;
+	text-align: center;
+}
+.site-header h1 small{
+	color:#e5e5e5;
+	display: block;
+	font: 300 16px 'Catamaran', sans-serif;
+}
+
+.site-nav ul{
+	text-align: center;
+	
+}
+.site-nav ul li{
+	display:inline;
+}
+.site-nav ul li a{
+	text-transform: uppercase;
+	font-size: 15px;
+	color: #bbb;
+	text-decoration: none;
+}
+.site-nav ul li a:hover,
+.site-nav ul li.active a{
+	color: #000;
+}
+
+.page-title{
+	text-align: center;
+}
+.page-title:before{
+	content: " -·-° ";
+}
+.page-title:after{
+	content: " °-·- ";
+}
+
+.fb-trening{
+	background-color: #e9eaed;
+	padding: 20px;
+	margin: 20px;
+}
+
+.container:after{
+	content:"";
+	display: block;
+	clear: both;
+}
+.one-half{
+	width: 50%;
+	float: left
+}
+
+.one-half h2{
+	text-align: center;
+	color:green;
+	border-bottom: solid 4px red;
+	margin:0 10px;
+}
+
+
+/*======================================
+=            Sidebar Styles            =
+======================================*/
+
+.sidebar{
+	background-color: #FFF;
+	border:solid 1px #dfe0e4;
+	width:254px;
+	padding:12px;
+}
+
+.widget{
+	border-bottom: solid 1px #e9eaed;
+}
+.widget h3{
+	font: normal bold 11px/15px arial, tahoma, sans-serif;
+	color:#90949c;
+	text-transform: uppercase;
+	margin:0;
+}
+
+.trending-list{
+	margin:14px 0;
+	padding-left: 0;
+	list-style: none;
+}
+.trending-list li{
+	padding-left: 20px;
+	background-image: url('../img/spike.png');
+	background-repeat: no-repeat;
+	background-position: 0 4px;
+	font-size:12px;
+	font-family: arial,tahoma,sans-serif;
+	line-height: 15px;
+	padding-bottom: 10px;
+}
+.trending-list li a{
+	text-decoration: none;
+	color: #90949c;
+}
+.trending-list li a strong{
+	color: #365899;
+}
+.trending-list li a:hover strong{
+	text-decoration: underline;
+}
+/*=====  End of Sidebar Styles  ======*/
+

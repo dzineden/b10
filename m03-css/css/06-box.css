@@ -76,9 +76,51 @@ column-rule - <'column-rule-width'> || <'column-rule-style'> || <'column-rule-co
 }
 
 
+.articles{
+	border:dotted 1px red;
+	margin:20px auto;
+	background-color: lightgreen;
+	padding:30px;
+	width:720px;
+}
+.articles .post{
+	border-bottom:dashed 1px gray;
+	margin-bottom:20px;
+	background-color: white;
+	padding:10px
+}
 
-
-
+.row{
+	border:solid 4px red;
+	background-color: lightgreen;
+	margin:10px 25px;
+	padding:10px;
+}
+.row:after{
+	content:"";
+	clear: both;
+	display: block;
+}
+.row h1{
+	background-color: wheat;
+	border:solid 1px green;
+	margin:0;
+	font-size: 14px;
+	text-transform: uppercase;
+	float: left;
+}
+.row span{
+	background-color: wheat;
+	border:solid 1px green;
+	width:200px;
+	float: right;
+}
+.row p{
+	background-color: lightblue;
+	border:solid 1px orange;
+	margin:0;
+	clear:both;
+}
 
 
 
