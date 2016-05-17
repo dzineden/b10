@@ -79,6 +79,19 @@ h6{
 	border-bottom: solid 4px red;
 	margin:0 10px;
 }
+/*==================================
+=            Clearfixes            =
+==================================*/
+.widget header:after,
+.frnd:after{
+	content:"";
+	display: block;
+	clear: both;
+}
+
+
+
+/*=====  End of Clearfixes  ======*/
 
 
 /*======================================
@@ -88,20 +101,36 @@ h6{
 .sidebar{
 	background-color: #FFF;
 	border:solid 1px #dfe0e4;
-	width:254px;
+	width:450px;
 	padding:12px;
 }
 
 .widget{
+	font-family: arial,tahoma,sans-serif;
 	border-bottom: solid 1px #e9eaed;
+	margin-bottom: 10px;
 }
-.widget h3{
+.widget h3,
+.widget h4{
 	font: normal bold 11px/15px arial, tahoma, sans-serif;
 	color:#90949c;
-	text-transform: uppercase;
 	margin:0;
 }
+.widget h3{
+	text-transform: uppercase;
+}
 
+/*----------  widget header styles  ----------*/
+.widget header{
+}
+.widget header h3{
+	float: left;
+}
+.widget header a{
+	float: right;
+}
+
+/*----------  trending list  ----------*/
 .trending-list{
 	margin:14px 0;
 	padding-left: 0;
@@ -113,7 +142,6 @@ h6{
 	background-repeat: no-repeat;
 	background-position: 0 4px;
 	font-size:12px;
-	font-family: arial,tahoma,sans-serif;
 	line-height: 15px;
 	padding-bottom: 10px;
 }
@@ -121,11 +149,86 @@ h6{
 	text-decoration: none;
 	color: #90949c;
 }
-.trending-list li a strong{
+.widget a strong,
+.widget h4 a{
 	color: #365899;
+	text-decoration: none;
 }
-.trending-list li a:hover strong{
+.widget a:hover strong,
+.widget h4 a:hover{
 	text-decoration: underline;
 }
+/*----------  friend requests with floats ----------*/
+.frnd-requests{
+	padding-top: 10px;
+}
+.frnd{
+	margin-bottom: 10px;
+}
+.frnd-pic{
+	float: left;
+	margin-right: 10px;
+}
+.frnd-pic img{
+	display: block;
+	padding:4px;
+	background-color: #FFF;
+	border: solid 1px #CCC;
+	-webkit-transition: all 300ms ease;
+		 -moz-transition: all 300ms ease;
+			-ms-transition: all 300ms ease;
+			 -o-transition: all 300ms ease;
+					transition: all 300ms ease;
+}
+.frnd-pic img:hover{
+	background-color: #D5EA4A;
+	border: solid 1px #B1B1B1;
+	border-radius: 50% 25% 0;
+}
+.frnd-details{
+	float: left;
+	border: solid 1px red;
+	width:180px;
+}
+
+/*----------  friend requests with margin  ----------*/
+.frnd-details-margin{
+	border: dotted 1px red;
+	margin-left: 70px;
+
+}
+
+/*----------  button link  ----------*/
+.btn-link{
+	border-style: solid;
+	border-width: 1px;
+	border-color: #CCC #c5c6c8 #b6b7b9;
+	border-radius: 2px;
+
+	background: #fffcfc;
+	background: -moz-linear-gradient(top,  #fffcfc 0%, #f6f7f8 100%);
+	background: -webkit-linear-gradient(top,  #fffcfc 0%,#f6f7f8 100%);
+	background: linear-gradient(to bottom,  #fffcfc 0%,#f6f7f8 100%);
+	
+	color: #4e5665;
+	text-decoration: none;
+	font-size:12px;
+	font-weight: bold;
+	line-height: 22px;
+	padding-left: 24px;
+	padding-right: 10px;
+	display: inline-block;
+	
+}
+.btn-link:hover{
+background: #f6f7f8;
+background: -moz-linear-gradient(top,  #f6f7f8 4%, #fffcfc 100%);
+background: -webkit-linear-gradient(top,  #f6f7f8 4%,#fffcfc 100%);
+background: linear-gradient(to bottom,  #f6f7f8 4%,#fffcfc 100%);
+
+	border-color: #333;
+
+}
+
 /*=====  End of Sidebar Styles  ======*/
 
