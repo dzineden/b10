@@ -1,0 +1,80 @@
+html{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	color: #444;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Roboto Slab', serif;
+}
+*,
+*:before,
+*:after{
+	box-sizing: border-box;
+}
+
+/*======================================
+=            Layout commons            =
+======================================*/
+.container{
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.row{
+	border:dashed 2px green;
+	margin-bottom: 20px;
+}
+.row img{
+	display: block;
+	max-width: 100%;
+}
+
+
+/*----------  Clearfixes  ----------*/
+.container:after{
+	clear: both;
+	display: block;
+	content: "";
+}
+
+
+/*=====  End of Layout commons  ======*/
+
+
+
+/*==============================
+=            Header            =
+==============================*/
+.site-header{
+	background-color: #0bbcff;
+	border-bottom: solid 4px #9c27b0;
+}
+.logo{
+	background-color: orange;
+	float: left;
+}
+.social-links{
+	background-color: green;
+	float: right;
+	padding-left: 0;
+	margin: 0;
+	list-style: none;
+}
+.social-links li{
+	float: left;
+}
+nav{
+	background-color: lightblue;
+	clear: left;
+	float: left;
+}
+.helpline{
+	background-color: yellow;
+	clear: right;
+	float: right;
+	
+}
+
+
+/*=====  End of Header  ======*/
+
