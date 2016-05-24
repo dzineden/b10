@@ -12,7 +12,9 @@ html{
 	color: #444;
 	overflow-y: scroll;
 }
-
+body{
+	margin: 0;
+}
 h1,
 h2,
 h3,
@@ -25,6 +27,7 @@ h6{
 
 .site-header{
 	background-color: #03A9F4;
+	padding-top: 1px;
 }
 .site-header h1{
 	font-size: 40px;

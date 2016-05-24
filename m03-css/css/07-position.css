@@ -1,0 +1,154 @@
+/* 
+things to rememebr about every property
+----------------------------------------
+		1.	What is the default value of this property
+		2.	Does this property get inherited
+		3.	On which elements can you apply this property
+
+Links to refer
+----------------------------------------
+Complete list - https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+
+text transform - https://css-tricks.com/almanac/properties/t/text-transform/
+
+							 - https://developer.mozilla.org/en/docs/Web/CSS/text-transform
+							 
+Color names		 - http://html-color-codes.info/color-names/
+
+
+*/
+/* 
+07-position related style properties
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+position: static | relative | absolute | sticky  |  fixed
+Applies to all elements
+left, top, right, bottom
+Applies to positioned elements
+z-index: auto | <integer>
+Applies to positioned elements
+visibility: visible | hidden | collapse
+Applies to all elements
+overflow: visible | hidden | scroll | auto
+overflow-x
+overflow-y
+
+
+
+
+*/
+
+h2{
+	margin-bottom: 0;
+	text-align: center;
+	
+}
+
+.row{
+	border: solid 1px black;
+	background-color: lightgreen;
+	margin: 0 40px 40px;
+	padding: 25px;
+}
+.dabba{border:solid 1px black;margin-bottom: 5px;}
+
+.red{background-color: red}
+.blue{background-color: blue}
+.green{background-color: green}
+.orange{background-color: orange}
+.violet{background-color: violet}
+
+.static-demo{}
+.static-demo .red{
+	position: static;
+	top: 200px;
+	left: 200px;
+}
+
+
+.relative-demo{}
+.relative-demo .red{
+	position: relative;
+	right:50px;
+	left:50px;
+	top: 50px;
+	bottom: 50px;
+	z-index: 1;
+}
+
+.relative-demo .green{
+	position: relative;
+	z-index: 1;
+}
+.absolute-demo{
+}
+.absolute-demo .blue{
+	position: absolute;
+	left:0;
+	top: 0;
+}
+
+.banner{
+	border:solid 8px #CCC;
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+.banner img{
+	max-width:100%;
+	display: block;
+}
+.banner h1{
+	background-color: rgba(0,0,0,.65);
+	padding:10px;
+	text-align: center;
+	margin:0;
+	position: absolute;
+	left:0;
+	bottom: 0;
+	color: #FFF;
+	width: 100%;
+	box-sizing: border-box;
+}
+.arrow{
+	background-color: rgba(220,220,220,.6);
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 40px;
+	position: absolute;
+	top: 0;
+	bottom:0;
+	margin-top: auto;
+	margin-bottom: auto;
+	cursor: pointer;
+
+	-webkit-transition: all 250ms ease-in;
+					transition: all 250ms ease-in;
+}
+.arrow:hover{
+	background-color: rgba(220,220,220,.9);
+	border:solid 4px red;
+}
+
+.arrow.left{left: -20px;}
+.arrow.right{right: -20px;}
+
+.arrow.left:hover{left: -30px;}
+.arrow.right:hover{right: -30px;}
+
+.like{
+	background-color: rgba(220,0,0,.8);
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 150px;
+	position: absolute;
+	top: 0; bottom:0;	right: 0; left: 0;
+	margin: auto;
+	cursor: pointer;
+}
+
