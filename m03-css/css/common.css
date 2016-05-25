@@ -14,6 +14,7 @@ html{
 }
 body{
 	margin: 0;
+	background-color: #f3f3f3;
 }
 h1,
 h2,
@@ -27,22 +28,52 @@ h6{
 
 .site-header{
 	background-color: #03A9F4;
-	padding-top: 1px;
+	padding-top: 50px;
+
 }
 .site-header h1{
 	font-size: 40px;
-	color:#FFF;
+	line-height: 40px;
+	color:#03A9F4;
 	text-align: center;
+	background-color: #FFF;
+	position: absolute;
+	top: 15px;
+	left:50px;
+	width: 160px;
+	height:160px;
+	border-radius:50%;
+	margin:0;
+	padding-top: 60px;
+	box-sizing: border-box;
+	-webkit-transition: all 250ms ease-in;
+					transition: all 250ms ease-in;
+
+
 }
+.site-header h1:after{
+	box-sizing: border-box;
+	width:180px;
+	height: 180px;
+	border: double 9px #FFF;
+	border-radius:50%;
+	content:"";
+	position: absolute;
+	left:-10px;
+	top: -10px;
+	-webkit-transition: all 250ms ease-in;
+					transition: all 250ms ease-in;
+
+}
+.site-header h1:hover:after{
+	border:inset 3px pink;
+}
+
 .site-header h1 small{
-	color:#e5e5e5;
+	color:#666;
 	display: block;
-/* 
-	font-size: 16px;
-	font-family: 'Catamaran', sans-serif;
-	font-weight: 300;
-*/
-	font: 300 16px 'Catamaran', sans-serif;
+	font: 300 14px 'Catamaran', sans-serif;
+	text-transform: uppercase;
 }
 
 .site-nav ul{
@@ -80,5 +111,17 @@ h6{
 	content: " °-·- ";
 }
 
+footer{
+	background-color: #CECECE;
+	text-align: center;
+	padding:2px 0;
+	margin-top: 50px;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width:100%;
+}
 
-
+body{
+	padding-bottom: 100px;
+}
