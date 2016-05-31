@@ -191,9 +191,22 @@ nav{
 
 
 
+/*----------  Hero-banner  ----------*/
 
-
-
+.hero-banner{
+  position: relative;
+  color:#FFF;
+}
+.hero-banner img{
+  width:100%;
+}
+.hero-banner .container{
+  position: absolute;
+  top: 25%;left:0;right:0;
+}
+.hero-banner h1{
+  font-size:60px;
+}
 
 
 
