@@ -208,12 +208,87 @@ nav{
   font-size:60px;
 }
 
+.bg-light{
+  background-color: wheat;
+  padding:1px 0;
+  margin-bottom: 25px;
+}
 
+p{color:green}
+.lead{color:blue;font-size:30px;
+border:dotted 1px red}
+#maintxt{color:orange;font-size:20px;}
 
+#maintxt{color:black}
+.lead + p{
+  margin-top: 0;
+  color:#000;
+  font-style:italic;
+  font-weight:bold;
+}
+.lead + h3{
+  visibility: hidden;
+}
+.sub-title{
+  margin-bottom: 0
+}
+.sub-title + ul{
+  margin-top: 0
+}
 
+.side-linkz{
+  list-style: none;
+  padding-left: 0;
+}
+.side-linkz > li{
+  border-bottom: solid 4px green;
+}
 
+.fa-color{color:orange}
 
+.side-linkz a[href*="htmlden.com"]{
+  color:red;
+  font-size:30px;
+}
 
+.bg-light h1{
+  text-align: center;
+}
+
+.mytbl{
+  border:solid 1px red;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mytbl tr{
+  cursor: pointer;
+}
+.mytbl tr:nth-child(odd){
+  background-color: lightblue;
+}
+.mytbl tr:nth-child(odd):hover{
+  background-color: blue;
+}
+.mytbl tr:nth-child(even){
+  background-color: lightgreen;
+}
+.mytbl tr:nth-child(even):hover{
+  background-color: green;
+}
+.mytbl th{
+  background-color: pink;
+  border:solid 1px red;
+  padding:10px 5px;
+}
+.mytbl td{
+  border:solid 1px red;
+  padding:5px;
+}
+.mytbl-sl{width:60px}
+.mytbl-email{width:120px}
+.mytbl-mob{width:100px}
+.mytbl-city{width:150px}
 
 
 /* ==========================================================================
