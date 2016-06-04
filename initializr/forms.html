@@ -81,6 +81,110 @@
       </tr>
     </table>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos omnis molestiae voluptatum mollitia cumque facere consectetur, dolorem dolor ipsum distinctio sed veniam quos rem laboriosam, eum accusamus magnam nisi culpa.</p>
+    <form action="thank-you.html" method="get" id="demo-form">
+      <fieldset>
+        <legend>Personal Info</legend>
+        <input type="hidden" name="" value="">
+        <div class="form-row">
+          <label for="df-username">Name</label>
+          <input type="text" name="Username" placeholder="Enter your name" id="df-username" required autofocus readonly disabled>
+        </div>
+        <div class="form-row">
+          <label for="df-password">PAssword</label>
+          <input type="password" name="password" placeholder="Enter your password" id="df-password">
+        </div>
+        <div class="form-row">
+          <label>Upload your photo</label>
+          <input type="file" >
+        </div>
+        <div class="form-row">
+          <label>Your salary</label>
+          <input type="number" min="300" max="600" step="50">
+        </div>
+        <div class="form-row">
+          <label>Range</label>
+          <input type="range" min="300" max="600" step="50">
+        </div>
+        <div class="form-row">
+          <label>Color</label>
+          <input type="color">
+        </div>
+        <div class="form-row">
+          <label>You DOB</label>
+          <input type="date" >
+        </div>
+        <div class="form-row">
+          <label>Your message</label>
+          <textarea name="message" placeholder="your message">what ever text</textarea>
+        </div>
+        <div class="form-row">
+          <label>Your message</label>
+          <!-- <select name="" multiple> -->
+          <select name="">
+            <option value="">Select your city</option>
+            <optgroup label="metro cities">
+              <option value="Bengaluru">Bengaluru</option>
+              <option value="Mysuru">Mysuru</option>
+              <option value="Mangaluru">Mangaluru</option>
+              <option value="Tumakuru">Tumakuru</option>
+              <option value="Hassan">Hassan</option>
+             </optgroup> 
+            <optgroup label="Other cities">
+              <option value="Bengaluru">Bengaluru</option>
+              <option value="Mysuru">Mysuru</option>
+              <option value="Mangaluru">Mangaluru</option>
+              <option value="Tumakuru">Tumakuru</option>
+              <option value="Hassan">Hassan</option>
+             </optgroup> 
+          </select>
+        </div>
+        <div class="form-row">
+          <p>Preferred Batch</p>
+          <div class="chk-row">
+            <input type="checkbox" name="preferred-batch" value="Morning" id="batch01">
+            <label for="batch01">Morning</label>
+          </div>
+          <div class="chk-row">
+            <input type="checkbox" name="preferred-batch" value="Afternoon" id="batch02">
+            <label for="batch02">Afternoon</label>
+          </div>
+          <div class="chk-row">
+            <input type="checkbox" name="preferred-batch" value="Evening" id="batch03">
+            <label for="batch03">Evening</label>
+          </div>
+          <div class="chk-row">
+            <input type="checkbox" name="preferred-batch" value="Weekend" id="batch04">
+            <label for="batch04">Weekend</label>
+          </div>
+        </div>
+        <div class="form-row">
+          <p>Preferred Batch</p>
+          <div class="chk-row">
+            <input type="radio" name="preferred-batch1" value="Morning" id="aabatch01">
+            <label for="aabatch01">Morning</label>
+          </div>
+          <div class="chk-row">
+            <input type="radio" name="preferred-batch1" value="Afternoon" id="aabatch02">
+            <label for="aabatch02">Afternoon</label>
+          </div>
+          <div class="chk-row">
+            <input type="radio" name="preferred-batch1" value="Evening" id="aabatch03">
+            <label for="aabatch03">Evening</label>
+          </div>
+          <div class="chk-row">
+            <input type="radio" name="preferred-batch1" value="Weekend" id="aabatch04">
+            <label for="aabatch04">Weekend</label>
+          </div>
+        </div>
+
+
+        <div class="form-row">
+          <input type="submit" value="Register">
+          <input type="reset" value="clear form">
+          <input type="button" value="do something">
+        </div>
+      </fieldset>
+    </form>
   </div>
 </div>
 
