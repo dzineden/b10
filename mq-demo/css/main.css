@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6{
 
 
 .container{
-  padding: 1px 15px;
+  padding: 0 15px;
 }
 .container:after{
   clear: both;
@@ -109,7 +109,8 @@ h1, h2, h3, h4, h5, h6{
 }
 .site-header h1{
   text-align: center;
-  margin-top: 15px;
+  margin-top: 0;
+  padding-top: 15px;
   line-height: 26px;
 }
 .site-header h1 a{
@@ -122,7 +123,6 @@ h1, h2, h3, h4, h5, h6{
   line-height: 18px;
   font-family: 'Open Sans', sans-serif;
   display: block;
-  border:solid 1px red;
 }
 @media (min-width:768px) {
   .site-header h1{
@@ -156,6 +156,7 @@ h1, h2, h3, h4, h5, h6{
     background-color: #FFF;
     position: absolute;
     left:8px;
+    transition: all 250ms ease;
   }
   .hamburger:hover span{
     left:7px;
@@ -164,7 +165,206 @@ h1, h2, h3, h4, h5, h6{
   .hamburger span:first-child{top: 9px;}
   .hamburger span:nth-child(2){top: 15px;}
   .hamburger span:last-child{top: 21px;}
+
+  .hamburger.close span:first-child{
+    transform: rotate(45deg);
+    top: 15px;
+  }
+  .hamburger.close span:last-child{
+    transform: rotate(-45deg);
+    top: 15px;
+  }
+  .hamburger.close span:nth-child(2){
+    left:-30px;
+    opacity: 0;
+  }
+
 }
+@media (min-width:768px) {
+  .hamburger{display: none}
+}
+
+/*----------  nav  ----------*/
+.site-header{
+  position: relative;
+}
+@media (max-width:767px) {
+  .site-header nav{
+    background-color: #e1bee7;
+    width:220px;
+    position: absolute;
+    left:0;
+    top: 118px;
+    display: none;
+  }
+}
+@media (min-width:768px) {
+  .site-header nav{
+    clear: both;
+    float: left;
+  }
+}
+.site-header ul{
+  padding-left: 0;
+  margin:0;
+  list-style: none;
+}
+
+/*----------  site-nav  ----------*/
+
+.site-nav{}
+@media (min-width:768px) {
+  .site-nav li{
+    float: left;
+  }
+}
+.site-nav li a{
+  color:#444;
+  font-size:16px;
+  line-height: 34px;
+  text-decoration: none;
+  display: block;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.site-nav li:last-child a{
+  border-bottom-color: #9c27b0;
+}
+@media (max-width:767px) {
+  .site-nav li a{
+    padding-left: 20px;
+    border-bottom: solid 1px #d4aade;
+  }
+}
+@media (min-width:768px) {
+  .site-nav li{
+    margin-right: 10px;
+  }
+  .site-nav li a{
+    background-color: #e1bee7;
+    border-radius:4px 4px 0 0;
+  }
+}
+@media (min-width:768px) and (max-width:979px) {
+  .site-nav li a span{
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+}
+.site-nav li a:before{
+  padding-right: 10px;
+}
+.site-nav li.active a,
+.site-nav li a:hover{
+  background-color: #9c27b0;
+  color:#FFF;
+}
+.site-nav li.kg-home a:before{content: "\f015"}
+.site-nav li.kg-about a:before{content: "\e901"}
+.site-nav li.kg-work a:before{content: "\e903"}
+.site-nav li.kg-gallery a:before{content: "\e906"}
+.site-nav li.kg-blog a:before{content: "\e90d"}
+.site-nav li.kg-hire a:before{content: "\e90f"}
+
+/*----------  social-icons  ----------*/
+
+.social-icons{
+  padding:25px 0;
+  text-align: center;
+}
+@media (min-width:768px) {
+  .site-header .container{position: relative;}
+  .social-icons{
+    position: absolute;
+    right:20px;
+    top: 0;
+  }
+}
+.social-icons li{ 
+  display: inline-block;
+  padding:0 3px;
+}
+.social-icons li a{
+  text-decoration: none;
+}
+.social-icons li a span{
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.social-icons li a:before{
+  width: 30px;
+  height: 30px;
+  background-color: #999;
+  border-radius:50%;
+  display: block;
+  color: #FFF;
+  font-size:18px;
+  line-height:30px !important;
+  text-align: center;
+}
+.social-icons .kg-fb a:before{content: "\e84e"}
+.social-icons .kg-pi a:before{content: "\e52f"}
+.social-icons .kg-tw a:before{content: "\e566"}
+.social-icons .kg-gp a:before{content: "\e913"}
+.social-icons .kg-li a:before{content: "\e90e"}
+
+.social-icons .kg-fb a:hover:before{background-color: green}
+.social-icons .kg-pi a:hover:before{background-color: blue}
+.social-icons .kg-tw a:hover:before{background-color: black}
+.social-icons .kg-gp a:hover:before{background-color: yellow}
+.social-icons .kg-li a:hover:before{background-color: crimson}
+
+/*----------  connect-icons  ----------*/
+
+.connect-icons{
+  float: right;
+  text-align: center;
+}
+.connect-icons li{ 
+  display: inline-block;
+  padding:0 3px;
+}
+.connect-icons li a{
+  text-decoration: none;
+}
+.connect-icons li a span{
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.connect-icons li a:before{
+  width: 30px;
+  height: 30px;
+  background-color: #999;
+  border-radius:50%;
+  display: block;
+  color: #FFF;
+  font-size:18px;
+  line-height:30px !important;
+  text-align: center;
+}
+.connect-icons .kg-call a:before{content: "\e90c"}
+.connect-icons .kg-email a:before{content: "\e900"}
+
+.connect-icons li a:hover:before{background-color: white;color:grey}
+
 
 
 /*=====  End of header styles  ======*/
@@ -188,7 +388,11 @@ h1, h2, h3, h4, h5, h6{
     font-style: normal;
 }
 
-[class^="icon-"]:before, [class*=" icon-"]:before {
+[class^="icon-"]:before,
+[class*=" icon-"]:before,
+.site-nav li a:before,
+.social-icons li a:before,
+.connect-icons li a:before {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'boxycons' !important;
     speak: none;
