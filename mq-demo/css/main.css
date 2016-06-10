@@ -138,6 +138,7 @@ h1, h2, h3, h4, h5, h6{
 /*----------  hamburger styles  ----------*/
 @media (max-width:767px) {
   .hamburger{
+    margin-bottom: 5px;
     width: 34px;
     height: 34px;
     border-radius:50%;
@@ -214,11 +215,11 @@ h1, h2, h3, h4, h5, h6{
 
 .site-nav{}
 @media (min-width:768px) {
-  .site-nav li{
+  .site-nav > li{
     float: left;
   }
 }
-.site-nav li a{
+.site-nav > li > a{
   color:#444;
   font-size:16px;
   line-height: 34px;
@@ -227,22 +228,24 @@ h1, h2, h3, h4, h5, h6{
   padding-left: 10px;
   padding-right: 10px;
 }
-.site-nav li:last-child a{
+.site-nav > li:last-child > a{
   border-bottom-color: #9c27b0;
 }
 @media (max-width:767px) {
-  .site-nav li a{
+  .site-nav > li > a{
     padding-left: 20px;
     border-bottom: solid 1px #d4aade;
   }
 }
 @media (min-width:768px) {
-  .site-nav li{
+  .site-nav > li{
     margin-right: 10px;
+  }
+  .site-nav > li > a{
+    border-radius:4px 4px 0 0;
   }
   .site-nav li a{
     background-color: #e1bee7;
-    border-radius:4px 4px 0 0;
   }
 }
 @media (min-width:768px) and (max-width:979px) {
@@ -257,20 +260,86 @@ h1, h2, h3, h4, h5, h6{
     width: 1px;
   }
 }
-.site-nav li a:before{
+.site-nav > li > a:before{
   padding-right: 10px;
 }
 .site-nav li.active a,
+.site-nav > li:hover > a,
 .site-nav li a:hover{
   background-color: #9c27b0;
   color:#FFF;
 }
-.site-nav li.kg-home a:before{content: "\f015"}
-.site-nav li.kg-about a:before{content: "\e901"}
-.site-nav li.kg-work a:before{content: "\e903"}
-.site-nav li.kg-gallery a:before{content: "\e906"}
-.site-nav li.kg-blog a:before{content: "\e90d"}
-.site-nav li.kg-hire a:before{content: "\e90f"}
+.site-nav > li.kg-home > a:before{content: "\f015"}
+.site-nav > li.kg-about > a:before{content: "\e901"}
+.site-nav > li.kg-work > a:before{content: "\e903"}
+.site-nav > li.kg-gallery > a:before{content: "\e906"}
+.site-nav > li.kg-blog > a:before{content: "\e90d"}
+.site-nav > li.kg-hire > a:before{content: "\e90f"}
+
+/*----------  Sub-menu styles  ----------*/
+
+.site-nav > li.has-submenu > a:after{
+  width:10px;
+  height: 10px;
+  border-left:ridge 2px #444;
+  border-bottom:ridge 2px #444;
+  content:"";
+  float: right;
+  margin-top: 13px;
+  margin-right: 10px;
+  margin-left: 10px;
+  transform: rotate(-45deg);
+}
+.site-nav > li.has-submenu > a:hover:after,
+.site-nav > li:hover > a:after{
+  border-left-color:#FFF;
+  border-bottom-color:#FFF;
+}
+
+.submenu li{}
+.submenu li a{
+  display: block;
+  line-height: 28px;
+  text-decoration: none;
+  color: #777;
+  padding-left: 35px;
+  border-bottom: solid 1px #E5D8E8;
+}
+.submenu li a:before{
+  content:"»";
+  padding-right: 10px;
+}
+@media (min-width:768px) {
+  .site-nav > li.has-submenu{
+    position: relative;
+  }
+  .submenu{
+    position: absolute;
+    left:0;
+    top: 34px;
+    width:200px;
+    background-color: #9c27b0;
+    border:solid 4px #9c27b0;
+    border-top-width: 4px;
+    display: none;
+    padding-bottom: 5px;
+    border-radius:0 0 6px 6px;
+  } 
+  .submenu li a{
+    display: block;
+    padding-left: 15px;
+  }
+  .submenu li:last-child a{
+    border-bottom: none;
+  }
+
+  .site-nav > li.has-submenu:hover .submenu{
+    display: block;
+  }
+
+}
+
+
 
 /*----------  social-icons  ----------*/
 
@@ -370,7 +439,39 @@ h1, h2, h3, h4, h5, h6{
 /*=====  End of header styles  ======*/
 
 
+/*----------  Testimonials  ----------*/
+.testimonial{
+  margin-bottom: 10px;
+  padding:10px;
+}
+.testimonial:after{
+  content:"";
+  display: block;
+  clear: both;
+}
+.testimonial .img{
+  float: left;
+}
+.testimonial .img img{
+  border-radius:50%;
+}
+.testimonial .tm-details{
+  margin-left:85px;
+  background-color: lightblue;
+  padding:5px;
+}
 
+@media (min-width:768px) {
+  .testimonial{
+    width:50%;
+    float: left;
+  }
+}
+@media (min-width:980px) {
+  .testimonial{
+    width:33.333%;
+  }
+}
 
 
 
