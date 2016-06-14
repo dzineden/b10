@@ -439,36 +439,58 @@ h1, h2, h3, h4, h5, h6{
 /*=====  End of header styles  ======*/
 
 
-/*----------  Testimonials  ----------*/
-.testimonial{
+/*----------  review  ----------*/
+.review_item{
   margin-bottom: 10px;
   padding:10px;
 }
-.testimonial:after{
+.review_item:after{
   content:"";
   display: block;
   clear: both;
 }
-.testimonial .img{
+.review_item .img{
   float: left;
 }
-.testimonial .img img{
+.review_item .img img{
   border-radius:50%;
 }
-.testimonial .tm-details{
+.review_item .tm-details{
   margin-left:85px;
   background-color: lightblue;
   padding:5px;
 }
 
+.review_item_good-one .tm-details{
+  border:solid 1px green;
+}
+.review_item_good-one{
+  position: relative;  
+}
+.review_item_good-one:before{
+  content:"Good";
+  width:100px;
+  height: 24px;
+  position: absolute;
+  right: 0;
+  top: 20px;
+  background-color: red;
+  color:#FFF;
+  text-transform: uppercase;
+  font-size:12px;
+  text-align: center;
+  line-height: 24px;
+  transform: rotate(45deg);
+}
+
 @media (min-width:768px) {
-  .testimonial{
+  .review_item{
     width:50%;
     float: left;
   }
 }
 @media (min-width:980px) {
-  .testimonial{
+  .review_item{
     width:33.333%;
   }
 }
