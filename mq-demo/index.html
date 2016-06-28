@@ -34,7 +34,7 @@
     <nav>
       <ul class="site-nav">
         <li class="kg-home active"><a href="index.html" title=""><span>Home</span>
-        <li class="kg-about"><a href="#" title=""><span>About me</span></a></li>
+        <li class="kg-about"><a href="#" title="" onclick="alert('hey hi')"><span>About me</span></a></li>
         <li class="kg-work has-submenu">
           <a href="#" title=""><span>Work</span></a>
           <ul class="submenu">
@@ -62,6 +62,21 @@
     </ul>
   </div><!-- eo container -->
 </header><!-- /site-header -->
+
+
+
+<div id="owl-demo" class="owl-carousel owl-theme">
+ 
+  <div class="item"><img src="http://fakeimg.pl/1600x500/00CED1/FFF/?text=image+one"></div>
+  <div class="item"><img src="http://fakeimg.pl/1600x500/7B00D1/FFF/?text=image+two"></div>
+  <div class="item"><img src="http://fakeimg.pl/1600x500/D18F00/FFF/?text=image+three"></div>
+  <div class="item"><img src="http://fakeimg.pl/1600x500/00CED1/FFF/?text=image+one"></div>
+  <div class="item"><img src="http://fakeimg.pl/1600x500/7B00D1/FFF/?text=image+two"></div>
+  <div class="item"><img src="http://fakeimg.pl/1600x500/D18F00/FFF/?text=image+three"></div>
+ 
+</div>
+
+
 
 <section class="whitebg">
   <div class="container review">
@@ -218,8 +233,12 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
+<script src="owl-carousel/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>
-
+<script>
+  function doclick() {
+    alert('hey hi, you clicked');
+  }
+</script>
 </body>
 </html>

@@ -1,0 +1,41 @@
+/* CSS crunched with Crunch - http://crunchapp.net/ */
+body {
+  background-color: #e5ffe5;
+  color: #555
+}
+
+.site-header {
+  background-color: #9f9
+}
+
+h1 {
+  color: #3f3;
+  padding: 0 10px
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  background-color: #fff
+}
+
+p {
+  padding: 0 10px
+}
+
+.lead {
+  color: #333
+}
+
+nav {
+  border-bottom: solid 5px #030
+}
+
+nav ul {
+  list-style: none;
+  padding-left: 0
+}
+
+nav ul li {
+  display: inline
+}
