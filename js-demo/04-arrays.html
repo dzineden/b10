@@ -1,0 +1,105 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Demo of media queries - mobile first approach</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Roboto+Slab' rel='stylesheet' type='text/css'> -->
+
+  <link rel="icon shortcut" href="favicon.ico">
+
+  <meta name="author" content="KinGKriS">
+  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+</head>
+<body>
+<!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<header class="site-header">
+  <div class="container">
+    <h1><a href="index.html">KriShne Gowda
+          <small id="tagline"> web developer from Bengaluru</small></a>
+    </h1>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div><!-- eo hamburger -->
+    <nav>
+      <ul class="site-nav">
+        <li class="kg-home active"><a href="index.html" title=""><span>Home</span>
+        <li class="kg-about"><a href="#" title="" onclick="alert('hey hi')"><span>About me</span></a></li>
+        <li class="kg-work has-submenu">
+          <a href="#" title=""><span>Work</span></a>
+          <ul class="submenu">
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Logo &amp; Graphics</a></li>
+            <li><a href="#">Wordpress</a></li>
+          </ul>
+        </li>
+        <li class="kg-gallery"><a href="#" title=""><span>Gallery</span></a></li>
+        <li class="kg-blog"><a href="#" title=""><span>Blog</span></a></li>
+        <li class="kg-hire"><a href="#" title=""><span>Hire me</span></a></li>
+      </ul>
+      <ul class="social-icons">
+        <li class="kg-fb"><a href="#"><span>Follow me on FB</span></a></li>
+        <li class="kg-pi"><a href="#"><span>Follow me on Pinterest</span></a></li>
+        <li class="kg-tw"><a href="#"><span>Follow me on Twitter</span></a></li>
+        <li class="kg-gp"><a href="#"><span>Follow me on Google plus</span></a></li>
+        <li class="kg-li"><a href="#"><span>Follow me on Linkedin</span></a></li>
+      </ul>
+    </nav>
+    <ul class="connect-icons">
+      <li class="kg-call"><a href="tel:+911234512345"><span>+91 12345 12345</span></a></li>
+      <li class="kg-email"><a href="mailto:kris@krisschool.com?subject=From website"><span>kris@krisschool.com</span></a></li>
+    </ul>
+  </div><!-- eo container -->
+</header><!-- /site-header -->
+
+<section class="whitebg">
+  <div class="container">
+    <h1 id="heading">Some title will come here</h1>
+    <div id="msgbox1" class="msgbox">
+      <h2>Grocery list</h2>
+      
+    </div><!-- /#msgbox -->
+  </div><!-- /.container -->
+</section><!-- /.whitebg -->
+
+<script>
+  msgbox = document.getElementById('msgbox1');
+
+  grocerylist = ['Coffee', 'Tea', 'Almonds', 'Bread', 'Wheat' , 'Sugar', 'Rice'];
+
+  msgbox.innerHTML += '<p>I need to buy ' + grocerylist.length + ' items</p>';
+  msgbox.innerHTML += '<p>' + grocerylist[0]+ '</p>';
+  msgbox.innerHTML += '<p>' + grocerylist + '</p>';
+
+  grocerylist.push('Tomato');
+  msgbox.innerHTML += '<p>' + grocerylist + '</p>';
+
+  grocerylist.sort();
+  msgbox.innerHTML += '<p>' + grocerylist + '</p>';
+
+  grocerylist.reverse();
+  msgbox.innerHTML += '<p>' + grocerylist + '</p>';
+
+  grocerylist.pop();
+  msgbox.innerHTML += '<p>' + grocerylist + '</p>';
+
+
+  
+
+</script>
+
+
+</body>
+</html>
